@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/project-practice/learn_C++/workplace/Employee_Management_System/build",
+  "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager.dir/includes_CXX.rsp -g -std=gnu++11   -Wall -g -o CMakeFiles\\workerManager.dir\\main.cpp.obj -c D:\\project-practice\\learn_C++\\workplace\\Employee_Management_System\\main.cpp",
+  "file": "D:/project-practice/learn_C++/workplace/Employee_Management_System/main.cpp",
+  "output": "CMakeFiles/workerManager.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/project-practice/learn_C++/workplace/Employee_Management_System/build",
+  "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager.dir/includes_CXX.rsp -g -std=gnu++11   -Wall -g -o CMakeFiles\\workerManager.dir\\src\\workerManager.cpp.obj -c D:\\project-practice\\learn_C++\\workplace\\Employee_Management_System\\src\\workerManager.cpp",
+  "file": "D:/project-practice/learn_C++/workplace/Employee_Management_System/src/workerManager.cpp",
+  "output": "CMakeFiles/workerManager.dir/src/workerManager.cpp.obj"
+}
+]

@@ -1,0 +1,186 @@
+// {
+//     "version": "2.0.0",
+//     "options": {
+//         "cwd": "${workspaceFolder}/build"    // == cd build
+//     }, 
+//     "tasks": [
+//         {
+//             "type": "shell",
+//             "label": "cmake",
+//             "command": "cmake",
+//             "args": [
+//                 ".."
+//             ]
+//         },
+//         {
+//             "label": "make",
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "command": "mingw32-make.exe",
+//             "args": [
+//             ]
+//         },
+//         {
+//             "label": "Build",
+//             "dependsOn": [
+//                 "cmake", 
+//                 "make"
+//             ]
+//         },
+//         {
+//             "label": "build",
+//             "type": "shell",
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "args": [
+//                 "-I",
+//                 "${workspaceFolder}\\include"        // 包含头文件
+//             ],
+//             "windows": {
+//                 "command": "powershell",
+//                 "args": [
+//                     "-c",
+//                     "mingw32-make"
+//                 ]
+//             },
+//             "linux": {
+//                 "command": "bash",
+//                 "args": [
+//                     "-c",
+//                     "make"
+//                 ]
+//             },
+//             "osx": {
+//                 "command": "bash",
+//                 "args": [
+//                     "-c",
+//                     "make"
+//                 ]
+//             }
+//         },
+//         {
+//             "label": "build & run",
+//             "type": "shell",
+//             "windows": {
+//                 "command": "powershell",
+//                 "args": [
+//                     "-c",
+//                     "'mingw32-make run'"
+//                 ]
+//             },
+//             "linux": {
+//                 "command": "bash",
+//                 "args": [
+//                     "-c",
+//                     "'make run'"
+//                 ]
+//             },
+//             "osx": {
+//                 "command": "bash",
+//                 "args": [
+//                     "-c",
+//                     "'make run'"
+//                 ]
+//             }
+//         },
+//         {
+//             "label": "clean",
+//             "type": "shell",
+//             "windows": {
+//                 "command": "powershell",
+//                 "args": [
+//                     "-c",
+//                     "'mingw32-make clean'"
+//                 ]
+//             },
+//             "linux": {
+//                 "command": "bash",
+//                 "args": [
+//                     "-c",
+//                     "'make clean'"
+//                 ]
+//             },
+//             "osx": {
+//                 "command": "bash",
+//                 "args": [
+//                     "-c",
+//                     "'make clean'"
+//                 ]
+//             }
+//         }
+//     ]
+// }
+// // 这种编译调试方式比较麻烦，对于不同的项目需要去对应的配置json文件
+// {
+//     "version": "2.0.0",  
+//     "tasks": [ // tasks.json作用: == g++ main.cpp a.cpp -o my_fun.exe
+//         {
+//             "type": "cppbuild",
+//             "label": "g++", 		// 与launch.json文件中"preLaunchTask"字段值一致！！！
+//             "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe",
+//             "args": [
+//                 "-fdiagnostics-color=always",
+//                 "-g",
+//                 "src/main.cpp",        // 添加自己的源文件，也是麻烦的地方
+//                 "src/workManager.cpp",
+//                 "-o",
+//                 "${fileDirname}\\${fileBasenameNoExtension}.exe",            //     通用  会额外在.vscode中生成tasks.exe，
+//                 // "${workspaceFolder}/build/work_manager.exe",  // "/" == "\\",          指定  需与launch.json中"program"字段保持一致，才能正确调试
+//                 // "-fexec-charset=GBK",  // 解决控制台输出窗口乱码问题
+//                 "-I",
+//                 "${workspaceFolder}\\include" // 包含头文件
+//             ],
+//             "options": {
+//                 "cwd": "${workspaceFolder}"
+//             },
+//             "problemMatcher": [
+//                 "$gcc"
+//             ],
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "detail": "调试器生成的任务。"
+//         }
+//     ]
+// }
+
+
+// 通用，不会因为项目不同而改变
+{
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder}/build" // == cd build
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                ".."
+            ]
+        },
+        {
+            "label": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "mingw32-make.exe",
+            "args": []
+        },
+        {
+            "label": "Build",
+            // "dependOrder": "sequence", // 按列出的顺序执行任务依赖项
+            "dependsOn": [
+                "cmake",
+                "make"
+            ]
+        }
+    ]
+}
