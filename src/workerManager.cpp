@@ -41,6 +41,3 @@ WorkerManager::~WorkerManager()
     
 }
 
-
-
-
