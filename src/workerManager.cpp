@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:53:52
- * @LastEditTime: 2024-09-09 09:34:08
+ * @LastEditTime: 2024-09-17 14:26:34
  */
 
 /*
@@ -20,7 +20,7 @@ WorkerManager::WorkerManager()
 {
 }
 
-void WorkerManager::showMenu()
+void WorkerManager::showMenu()        // 菜单
 {
     cout << "************************************************" << endl;
     cout << "************* 欢迎使用职工管理系统 *************" << endl;
@@ -38,14 +38,9 @@ void WorkerManager::showMenu()
 
 WorkerManager::~WorkerManager()
 {
+    
 }
 
-// int main()
-// {
-//     WorkerManager wm;
-//     wm.showMenu();
 
-//     system("pause");
 
-//     return 0;
-// }
+
