@@ -52,10 +52,10 @@ RM = "C:\Program Files\cmake-3.26.0-rc5-windows-x86_64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\project-practice\learn_C++\workplace\Employee_Management_System
+CMAKE_SOURCE_DIR = D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\project-practice\learn_C++\workplace\Employee_Management_System\build
+CMAKE_BINARY_DIR = D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/workerManager.dir/depend.make
@@ -70,33 +70,33 @@ include CMakeFiles/workerManager.dir/flags.make
 
 CMakeFiles/workerManager.dir/main.cpp.obj: CMakeFiles/workerManager.dir/flags.make
 CMakeFiles/workerManager.dir/main.cpp.obj: CMakeFiles/workerManager.dir/includes_CXX.rsp
-CMakeFiles/workerManager.dir/main.cpp.obj: D:/project-practice/learn_C++/workplace/Employee_Management_System/main.cpp
+CMakeFiles/workerManager.dir/main.cpp.obj: D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/main.cpp
 CMakeFiles/workerManager.dir/main.cpp.obj: CMakeFiles/workerManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\project-practice\learn_C++\workplace\Employee_Management_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/workerManager.dir/main.cpp.obj"
-	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/workerManager.dir/main.cpp.obj -MF CMakeFiles\workerManager.dir\main.cpp.obj.d -o CMakeFiles\workerManager.dir\main.cpp.obj -c D:\project-practice\learn_C++\workplace\Employee_Management_System\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/workerManager.dir/main.cpp.obj"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/workerManager.dir/main.cpp.obj -MF CMakeFiles\workerManager.dir\main.cpp.obj.d -o CMakeFiles\workerManager.dir\main.cpp.obj -c D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\main.cpp
 
 CMakeFiles/workerManager.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/workerManager.dir/main.cpp.i"
-	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\project-practice\learn_C++\workplace\Employee_Management_System\main.cpp > CMakeFiles\workerManager.dir\main.cpp.i
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\main.cpp > CMakeFiles\workerManager.dir\main.cpp.i
 
 CMakeFiles/workerManager.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/workerManager.dir/main.cpp.s"
-	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\project-practice\learn_C++\workplace\Employee_Management_System\main.cpp -o CMakeFiles\workerManager.dir\main.cpp.s
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\main.cpp -o CMakeFiles\workerManager.dir\main.cpp.s
 
 CMakeFiles/workerManager.dir/src/workerManager.cpp.obj: CMakeFiles/workerManager.dir/flags.make
 CMakeFiles/workerManager.dir/src/workerManager.cpp.obj: CMakeFiles/workerManager.dir/includes_CXX.rsp
-CMakeFiles/workerManager.dir/src/workerManager.cpp.obj: D:/project-practice/learn_C++/workplace/Employee_Management_System/src/workerManager.cpp
+CMakeFiles/workerManager.dir/src/workerManager.cpp.obj: D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/src/workerManager.cpp
 CMakeFiles/workerManager.dir/src/workerManager.cpp.obj: CMakeFiles/workerManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\project-practice\learn_C++\workplace\Employee_Management_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/workerManager.dir/src/workerManager.cpp.obj"
-	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/workerManager.dir/src/workerManager.cpp.obj -MF CMakeFiles\workerManager.dir\src\workerManager.cpp.obj.d -o CMakeFiles\workerManager.dir\src\workerManager.cpp.obj -c D:\project-practice\learn_C++\workplace\Employee_Management_System\src\workerManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/workerManager.dir/src/workerManager.cpp.obj"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/workerManager.dir/src/workerManager.cpp.obj -MF CMakeFiles\workerManager.dir\src\workerManager.cpp.obj.d -o CMakeFiles\workerManager.dir\src\workerManager.cpp.obj -c D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\src\workerManager.cpp
 
 CMakeFiles/workerManager.dir/src/workerManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/workerManager.dir/src/workerManager.cpp.i"
-	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\project-practice\learn_C++\workplace\Employee_Management_System\src\workerManager.cpp > CMakeFiles\workerManager.dir\src\workerManager.cpp.i
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\src\workerManager.cpp > CMakeFiles\workerManager.dir\src\workerManager.cpp.i
 
 CMakeFiles/workerManager.dir/src/workerManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/workerManager.dir/src/workerManager.cpp.s"
-	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\project-practice\learn_C++\workplace\Employee_Management_System\src\workerManager.cpp -o CMakeFiles\workerManager.dir\src\workerManager.cpp.s
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\src\workerManager.cpp -o CMakeFiles\workerManager.dir\src\workerManager.cpp.s
 
 # Object files for target workerManager
 workerManager_OBJECTS = \
@@ -112,7 +112,7 @@ workerManager.exe: CMakeFiles/workerManager.dir/build.make
 workerManager.exe: CMakeFiles/workerManager.dir/linkLibs.rsp
 workerManager.exe: CMakeFiles/workerManager.dir/objects1.rsp
 workerManager.exe: CMakeFiles/workerManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\project-practice\learn_C++\workplace\Employee_Management_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable workerManager.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable workerManager.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\workerManager.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/workerManager.dir/clean:
 .PHONY : CMakeFiles/workerManager.dir/clean
 
 CMakeFiles/workerManager.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\project-practice\learn_C++\workplace\Employee_Management_System D:\project-practice\learn_C++\workplace\Employee_Management_System D:\project-practice\learn_C++\workplace\Employee_Management_System\build D:\project-practice\learn_C++\workplace\Employee_Management_System\build D:\project-practice\learn_C++\workplace\Employee_Management_System\build\CMakeFiles\workerManager.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build\CMakeFiles\workerManager.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/workerManager.dir/depend
 

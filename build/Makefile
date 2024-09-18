@@ -56,10 +56,10 @@ RM = "C:\Program Files\cmake-3.26.0-rc5-windows-x86_64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\project-practice\learn_C++\workplace\Employee_Management_System
+CMAKE_SOURCE_DIR = D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\project-practice\learn_C++\workplace\Employee_Management_System\build
+CMAKE_BINARY_DIR = D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\project-practice\learn_C++\workplace\Employee_Management_System\build\CMakeFiles D:\project-practice\learn_C++\workplace\Employee_Management_System\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build\CMakeFiles D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\project-practice\learn_C++\workplace\Employee_Management_System\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

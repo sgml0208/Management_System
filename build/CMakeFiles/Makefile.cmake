@@ -28,7 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/cmake-3.26.0-rc5-windows-x86_64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/cmake-3.26.0-rc5-windows-x86_64/share/cmake-3.26/Modules/Platform/Windows.cmake"
   "C:/Program Files/cmake-3.26.0-rc5-windows-x86_64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake"
-  "D:/project-practice/learn_C++/workplace/Employee_Management_System/CMakeLists.txt"
+  "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/CMakeLists.txt"
   "CMakeFiles/3.26.0-rc5/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.0-rc5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.0-rc5/CMakeRCCompiler.cmake"

@@ -1,5 +1,5 @@
 CMakeFiles/workerManager.dir/main.cpp.obj: \
- D:\project-practice\learn_C++\workplace\Employee_Management_System\main.cpp \
+ D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\main.cpp \
  D:/Dev-Cpp/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iostream \
  D:/Dev-Cpp/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/requires_hosted.h \
  D:/Dev-Cpp/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -378,4 +378,4 @@ CMakeFiles/workerManager.dir/main.cpp.obj: \
  D:/Dev-Cpp/mingw64/x86_64-w64-mingw32/include/winsvc.h \
  D:/Dev-Cpp/mingw64/x86_64-w64-mingw32/include/mcx.h \
  D:/Dev-Cpp/mingw64/x86_64-w64-mingw32/include/imm.h \
- D:/project-practice/learn_C++/workplace/Employee_Management_System/include/workerManager.h
+ D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/include/workerManager.h

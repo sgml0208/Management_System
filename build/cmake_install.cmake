@@ -1,8 +1,8 @@
-# Install script for directory: D:/project-practice/learn_C++/workplace/Employee_Management_System
+# Install script for directory: D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/MYFUN")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/WORKMANAGER")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/project-practice/learn_C++/workplace/Employee_Management_System/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
