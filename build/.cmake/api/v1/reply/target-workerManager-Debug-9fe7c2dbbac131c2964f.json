@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 14,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
@@ -52,7 +52,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/project-practice/learn_C++/workplace/Employee_Management_System/include"
+					"path" : "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/include"
 				}
 			],
 			"language" : "CXX",

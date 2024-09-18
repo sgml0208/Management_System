@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:53:52
- * @LastEditTime: 2024-09-17 14:26:34
+ * @LastEditTime: 2024-09-18 23:02:38
  */
 
 /*
@@ -34,6 +34,11 @@ void WorkerManager::showMenu()        // 菜单
     cout << "**************** 7.清空所有文档 ****************" << endl;
     cout << "************************************************" << endl;
     cout << endl;
+}
+
+void WorkerManager::exitSystem()
+{
+    cout << "Successfully exited the system!" << endl;
 }
 
 WorkerManager::~WorkerManager()

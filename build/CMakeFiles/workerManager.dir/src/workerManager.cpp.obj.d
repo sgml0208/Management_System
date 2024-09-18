@@ -1,6 +1,6 @@
 CMakeFiles/workerManager.dir/src/workerManager.cpp.obj: \
- D:\project-practice\learn_C++\workplace\Employee_Management_System\src\workerManager.cpp \
- D:/project-practice/learn_C++/workplace/Employee_Management_System/include/workerManager.h \
+ D:\project-practice\learn_C++\CPlusPlus_projects\Employee_Management_System\src\workerManager.cpp \
+ D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/include/workerManager.h \
  D:/Dev-Cpp/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iostream \
  D:/Dev-Cpp/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/requires_hosted.h \
  D:/Dev-Cpp/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

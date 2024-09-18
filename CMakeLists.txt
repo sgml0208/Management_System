@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.10)
 
 #设置c++版本
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #声明一个cmake工程
 project("WORKMANAGER")
@@ -14,7 +15,10 @@ add_definitions(-Wall -g)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 #添加可执行程序
-add_executable(workerManager main.cpp src/workerManager.cpp) 
+add_executable(workerManager 
+        main.cpp 
+        src/workerManager.cpp
+) 
 
 # #把可执行程序链接到库文件上
 # target_link_libraries(main ${库名_LIBRARIES})

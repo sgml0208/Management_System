@@ -1,3 +1,0 @@
-"C:\Program Files\cmake-3.26.0-rc5-windows-x86_64\bin\cmake.exe" -E rm -f CMakeFiles\workmanager.dir/objects.a
-D:\Dev-Cpp\mingw64\bin\ar.exe qc CMakeFiles\workmanager.dir/objects.a @CMakeFiles\workmanager.dir\objects1.rsp
-D:\Dev-Cpp\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\workmanager.dir/objects.a -Wl,--no-whole-archive -o workmanager.exe -Wl,--out-implib,libworkmanager.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\workmanager.dir\linkLibs.rsp

@@ -28,6 +28,8 @@ public:
     // 展示菜单功能
     void showMenu();
 
+    void exitSystem();
+
 private:
 };
 
