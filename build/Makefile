@@ -152,6 +152,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/employee.obj: src/employee.cpp.obj
+.PHONY : src/employee.obj
+
+# target to build an object file
+src/employee.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/employee.cpp.obj
+.PHONY : src/employee.cpp.obj
+
+src/employee.i: src/employee.cpp.i
+.PHONY : src/employee.i
+
+# target to preprocess a source file
+src/employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/employee.cpp.i
+.PHONY : src/employee.cpp.i
+
+src/employee.s: src/employee.cpp.s
+.PHONY : src/employee.s
+
+# target to generate assembly for a file
+src/employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/employee.cpp.s
+.PHONY : src/employee.cpp.s
+
+src/worker.obj: src/worker.cpp.obj
+.PHONY : src/worker.obj
+
+# target to build an object file
+src/worker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/worker.cpp.obj
+.PHONY : src/worker.cpp.obj
+
+src/worker.i: src/worker.cpp.i
+.PHONY : src/worker.i
+
+# target to preprocess a source file
+src/worker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/worker.cpp.i
+.PHONY : src/worker.cpp.i
+
+src/worker.s: src/worker.cpp.s
+.PHONY : src/worker.s
+
+# target to generate assembly for a file
+src/worker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/worker.cpp.s
+.PHONY : src/worker.cpp.s
+
 src/workerManager.obj: src/workerManager.cpp.obj
 .PHONY : src/workerManager.obj
 
@@ -188,6 +236,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/employee.obj
+	@echo ... src/employee.i
+	@echo ... src/employee.s
+	@echo ... src/worker.obj
+	@echo ... src/worker.i
+	@echo ... src/worker.s
 	@echo ... src/workerManager.obj
 	@echo ... src/workerManager.i
 	@echo ... src/workerManager.s

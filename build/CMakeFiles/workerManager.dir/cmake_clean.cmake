@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/workerManager.dir/main.cpp.obj"
   "CMakeFiles/workerManager.dir/main.cpp.obj.d"
+  "CMakeFiles/workerManager.dir/src/employee.cpp.obj"
+  "CMakeFiles/workerManager.dir/src/employee.cpp.obj.d"
+  "CMakeFiles/workerManager.dir/src/worker.cpp.obj"
+  "CMakeFiles/workerManager.dir/src/worker.cpp.obj.d"
   "CMakeFiles/workerManager.dir/src/workerManager.cpp.obj"
   "CMakeFiles/workerManager.dir/src/workerManager.cpp.obj.d"
   "libworkerManager.dll.a"
