@@ -378,4 +378,6 @@ CMakeFiles/workerManager.dir/main.cpp.obj: \
  D:/Dev-Cpp/mingw64/x86_64-w64-mingw32/include/winsvc.h \
  D:/Dev-Cpp/mingw64/x86_64-w64-mingw32/include/mcx.h \
  D:/Dev-Cpp/mingw64/x86_64-w64-mingw32/include/imm.h \
- D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/include/workerManager.h
+ D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/include/workerManager.h \
+ D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/include/worker.h \
+ D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/include/employee.h
