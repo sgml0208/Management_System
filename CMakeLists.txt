@@ -18,8 +18,9 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 add_executable(workerManager 
         main.cpp 
         src/workerManager.cpp
-        src/worker.cpp
         src/employee.cpp
+        src/manager.cpp
+        src/boss.cpp
 ) 
 
 # #把可执行程序链接到库文件上

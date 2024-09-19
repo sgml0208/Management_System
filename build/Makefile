@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/boss.obj: src/boss.cpp.obj
+.PHONY : src/boss.obj
+
+# target to build an object file
+src/boss.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/boss.cpp.obj
+.PHONY : src/boss.cpp.obj
+
+src/boss.i: src/boss.cpp.i
+.PHONY : src/boss.i
+
+# target to preprocess a source file
+src/boss.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/boss.cpp.i
+.PHONY : src/boss.cpp.i
+
+src/boss.s: src/boss.cpp.s
+.PHONY : src/boss.s
+
+# target to generate assembly for a file
+src/boss.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/boss.cpp.s
+.PHONY : src/boss.cpp.s
+
 src/employee.obj: src/employee.cpp.obj
 .PHONY : src/employee.obj
 
@@ -176,29 +200,29 @@ src/employee.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/employee.cpp.s
 .PHONY : src/employee.cpp.s
 
-src/worker.obj: src/worker.cpp.obj
-.PHONY : src/worker.obj
+src/manager.obj: src/manager.cpp.obj
+.PHONY : src/manager.obj
 
 # target to build an object file
-src/worker.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/worker.cpp.obj
-.PHONY : src/worker.cpp.obj
+src/manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/manager.cpp.obj
+.PHONY : src/manager.cpp.obj
 
-src/worker.i: src/worker.cpp.i
-.PHONY : src/worker.i
+src/manager.i: src/manager.cpp.i
+.PHONY : src/manager.i
 
 # target to preprocess a source file
-src/worker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/worker.cpp.i
-.PHONY : src/worker.cpp.i
+src/manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/manager.cpp.i
+.PHONY : src/manager.cpp.i
 
-src/worker.s: src/worker.cpp.s
-.PHONY : src/worker.s
+src/manager.s: src/manager.cpp.s
+.PHONY : src/manager.s
 
 # target to generate assembly for a file
-src/worker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/worker.cpp.s
-.PHONY : src/worker.cpp.s
+src/manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\workerManager.dir\build.make CMakeFiles/workerManager.dir/src/manager.cpp.s
+.PHONY : src/manager.cpp.s
 
 src/workerManager.obj: src/workerManager.cpp.obj
 .PHONY : src/workerManager.obj
@@ -236,12 +260,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/boss.obj
+	@echo ... src/boss.i
+	@echo ... src/boss.s
 	@echo ... src/employee.obj
 	@echo ... src/employee.i
 	@echo ... src/employee.s
-	@echo ... src/worker.obj
-	@echo ... src/worker.i
-	@echo ... src/worker.s
+	@echo ... src/manager.obj
+	@echo ... src/manager.i
+	@echo ... src/manager.s
 	@echo ... src/workerManager.obj
 	@echo ... src/workerManager.i
 	@echo ... src/workerManager.s

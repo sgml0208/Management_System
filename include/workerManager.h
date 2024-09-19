@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:51:49
- * @LastEditTime: 2024-09-17 14:32:53
+ * @LastEditTime: 2024-09-19 22:32:02
  */
 
 
@@ -16,11 +16,18 @@
 
 #pragma once // 只要在头文件的最开始加入这条预处理指令，就能够保证头文件只被编译一次，防止头文件被重复引用。
 #include <iostream>
+#include "worker.h"
 using namespace std;
 
 class WorkerManager
 {
 public:
+    // 职工总人数
+    int m_workerNum;
+
+    // 职工数组指针: 存放指向子类对象的指针
+    Worker **m_workerArray;
+
     WorkerManager();
 
     ~WorkerManager();
@@ -28,7 +35,11 @@ public:
     // 展示菜单功能
     void showMenu();
 
+    // 退出系统
     void exitSystem();
+
+    // 添加职工
+    void addWorker();
 
 private:
 };

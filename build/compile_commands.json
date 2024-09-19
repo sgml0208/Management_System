@@ -13,14 +13,20 @@
 },
 {
   "directory": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/build",
-  "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager.dir/includes_CXX.rsp -g -std=gnu++11   -Wall -g -o CMakeFiles\\workerManager.dir\\src\\worker.cpp.obj -c D:\\project-practice\\learn_C++\\CPlusPlus_projects\\Employee_Management_System\\src\\worker.cpp",
-  "file": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/src/worker.cpp",
-  "output": "CMakeFiles/workerManager.dir/src/worker.cpp.obj"
-},
-{
-  "directory": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/build",
   "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager.dir/includes_CXX.rsp -g -std=gnu++11   -Wall -g -o CMakeFiles\\workerManager.dir\\src\\employee.cpp.obj -c D:\\project-practice\\learn_C++\\CPlusPlus_projects\\Employee_Management_System\\src\\employee.cpp",
   "file": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/src/employee.cpp",
   "output": "CMakeFiles/workerManager.dir/src/employee.cpp.obj"
+},
+{
+  "directory": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/build",
+  "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager.dir/includes_CXX.rsp -g -std=gnu++11   -Wall -g -o CMakeFiles\\workerManager.dir\\src\\manager.cpp.obj -c D:\\project-practice\\learn_C++\\CPlusPlus_projects\\Employee_Management_System\\src\\manager.cpp",
+  "file": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/src/manager.cpp",
+  "output": "CMakeFiles/workerManager.dir/src/manager.cpp.obj"
+},
+{
+  "directory": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/build",
+  "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager.dir/includes_CXX.rsp -g -std=gnu++11   -Wall -g -o CMakeFiles\\workerManager.dir\\src\\boss.cpp.obj -c D:\\project-practice\\learn_C++\\CPlusPlus_projects\\Employee_Management_System\\src\\boss.cpp",
+  "file": "D:/project-practice/learn_C++/CPlusPlus_projects/Employee_Management_System/src/boss.cpp",
+  "output": "CMakeFiles/workerManager.dir/src/boss.cpp.obj"
 }
 ]
