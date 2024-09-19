@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:53:52
- * @LastEditTime: 2024-09-18 23:02:38
+ * @LastEditTime: 2024-09-19 07:42:12
  */
 
 /*
@@ -14,7 +14,7 @@
 */
 
 #include "workerManager.h"
-using namespace std; // 下面只写cout则这句需要添加
+using namespace std; 
 
 WorkerManager::WorkerManager()
 {
