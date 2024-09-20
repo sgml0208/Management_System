@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:53:52
- * @LastEditTime: 2024-09-19 23:27:50
+ * @LastEditTime: 2024-09-20 22:24:16
  */
 
 /*
@@ -14,6 +14,7 @@
 */
 
 #include <windows.h>
+#include <iomanip>              // setw(16)
 #include "workerManager.h"
 #include "worker.h"
 #include "employee.h"
@@ -27,7 +28,7 @@ WorkerManager::WorkerManager()
     this->m_workerArray = NULL;
 }
 
-void WorkerManager::showMenu() // 菜单
+void WorkerManager::showMenu() // 显示菜单
 {
     cout << "************************************************" << endl;
     cout << "************* 欢迎使用职工管理系统 *************" << endl;
@@ -43,14 +44,30 @@ void WorkerManager::showMenu() // 菜单
     cout << endl;
 }
 
-void WorkerManager::exitSystem()
+void WorkerManager::exitSystem() // 退出系统
 {
     cout << "Successfully exited the system!" << endl;
 }
 
-void WorkerManager::addWorker()
+void WorkerManager::saveData() // 保存数据到文件
 {
-    cout << "Please enter the number of worker to be added: ";        // 程序健壮性不行，输入非数字则死循环
+    ofstream ofs;
+    ofs.open(FILENAME, ios::out); // 以输出的方式打开文件
+    ofs << left;                  // 左对齐
+
+    // 将每个人的数据写入文件
+    for (int i = 0; i < this->m_workerNum; i++)
+    {
+        ofs << setw(16) << this->m_workerArray[i]->m_Id // setw(10): 设置宽度为10个字符宽
+            << setw(20) << this->m_workerArray[i]->m_Name
+            << setw(16) << this->m_workerArray[i]->m_DeptId << endl;
+    }
+    ofs.close();
+}
+
+void WorkerManager::addWorker() // 添加职工信息
+{
+    cout << "Please enter the number of worker to be added: "; // 程序健壮性不行，输入非数字则死循环
     int addNum = 0;
     cin >> addNum;
     while (true)
@@ -70,10 +87,10 @@ void WorkerManager::addWorker()
             // 接着将新数据添加到新空间
             for (int i = 0; i < addNum; i++)
             {
-                int id;         // 职工编号
-                string name;    // 职工姓名
-                int deptSelect; // 职工部门
-                cout << "Please input No." << i + 1 << " new worker's id: ";      // 程序健壮性不行，输入非数字则死循环
+                int id;                                                      // 职工编号
+                string name;                                                 // 职工姓名
+                int deptSelect;                                              // 职工部门
+                cout << "Please input No." << i + 1 << " new worker's id: "; // 程序健壮性不行，输入非数字则死循环
                 cin >> id;
                 cout << "Please input No." << i + 1 << " new worker's name: ";
                 cin >> name;
@@ -106,8 +123,11 @@ void WorkerManager::addWorker()
             this->m_workerArray = newSpace;
             // 更新新的总职工人数
             this->m_workerNum = newSize;
+            // 保存职工数据信息到文件
+            this->saveData();
             cout << endl
-                 << "Add " << addNum << " workers successfully!" << endl;
+                 << "Add " << addNum << " workers and save successfully!" << endl;
+
             break;
         }
         else
@@ -116,10 +136,15 @@ void WorkerManager::addWorker()
             cin >> addNum;
         }
     }
-    system("pause");    // 按任意键继续
-    system("cls");      // windows系统的清屏
+    system("pause"); // 按任意键继续
+    system("cls");   // windows系统的清屏
 }
 
 WorkerManager::~WorkerManager()
 {
+    if (this->m_workerArray != NULL) // 堆区数据最好手动开辟手动释放
+    {
+        delete[] this->m_workerArray;
+        this->m_workerArray = NULL;
+    }
 }
