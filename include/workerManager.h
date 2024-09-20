@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:51:49
- * @LastEditTime: 2024-09-19 22:32:02
+ * @LastEditTime: 2024-09-20 22:01:39
  */
 
 
@@ -17,6 +17,8 @@
 #pragma once // 只要在头文件的最开始加入这条预处理指令，就能够保证头文件只被编译一次，防止头文件被重复引用。
 #include <iostream>
 #include "worker.h"
+#include <fstream>
+#define FILENAME "../workerData.txt"
 using namespace std;
 
 class WorkerManager
@@ -40,6 +42,9 @@ public:
 
     // 添加职工
     void addWorker();
+
+    // 保存数据到文件
+    void saveData();
 
 private:
 };
