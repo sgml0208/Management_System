@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:51:49
- * @LastEditTime: 2024-09-20 22:01:39
+ * @LastEditTime: 2024-09-21 21:33:34
  */
 
 
@@ -30,6 +30,9 @@ public:
     // 职工数组指针: 存放指向子类对象的指针
     Worker **m_workerArray;
 
+    // 文件是否为空
+    bool m_isFileEmpty;
+
     WorkerManager();
 
     ~WorkerManager();
@@ -42,6 +45,12 @@ public:
 
     // 添加职工
     void addWorker();
+
+    // 获取统计的职工人数
+    int get_workerNum();
+
+    // 初始化职工
+    void initWorker();
 
     // 保存数据到文件
     void saveData();

@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-07-24 07:53:52
- * @LastEditTime: 2024-09-20 22:24:16
+ * @LastEditTime: 2024-09-21 22:36:45
  */
 
 /*
@@ -14,7 +14,7 @@
 */
 
 #include <windows.h>
-#include <iomanip>              // setw(16)
+#include <iomanip> // setw(16)
 #include "workerManager.h"
 #include "worker.h"
 #include "employee.h"
@@ -24,9 +24,50 @@ using namespace std;
 
 WorkerManager::WorkerManager()
 {
-    this->m_workerNum = 0; // 初始0个人
-    this->m_workerArray = NULL;
+    ifstream ifs;
+    ifs.open(FILENAME, ios::in); // 读文件
+
+    // 情况1：文件不存在，创建文件
+    if (!ifs.is_open()) // 文件是否打开成功
+    {
+        // cout << "The file does not exist!" << endl;
+        // 初始化属性
+        this->m_workerNum = 0;
+        this->m_workerArray = NULL; // 初始化数组指针为空
+        this->m_isFileEmpty = true;
+        ifs.close();
+        return;
+    }
+
+    // 情况2：文件存在，但文件为空
+    char ch;
+    ifs >> ch;
+    if (ifs.eof())
+    {
+        // cout << "The file is empty!" << endl;
+        this->m_workerNum = 0;
+        this->m_workerArray = NULL; // 初始化数组指针为空
+        this->m_isFileEmpty = true;
+        ifs.close();
+        return;
+    }
+
+    // 情况3：文件存在，且文件不为空
+    int num = this->get_workerNum(); // 职工人数
+    // cout << "The number of all workers is " << num << endl;
+    this->m_workerNum = num; // 更新成员属性
+    this->m_workerArray = new Worker *[this->m_workerNum];
+    this->initWorker();        // 将文件中的数据存到上一行的数组中
+
+    // test code
+    // for (int i = 0; i < this->m_workerNum; i++)
+    // {
+    //     cout << setw(16) << this->m_workerArray[i]->m_Id 
+    //          << setw(20) << this->m_workerArray[i]->m_Name
+    //          << setw(16) << this->m_workerArray[i]->m_DeptId << endl;
+    // }
 }
+
 
 void WorkerManager::showMenu() // 显示菜单
 {
@@ -44,10 +85,12 @@ void WorkerManager::showMenu() // 显示菜单
     cout << endl;
 }
 
+
 void WorkerManager::exitSystem() // 退出系统
 {
     cout << "Successfully exited the system!" << endl;
 }
+
 
 void WorkerManager::saveData() // 保存数据到文件
 {
@@ -64,6 +107,34 @@ void WorkerManager::saveData() // 保存数据到文件
     }
     ofs.close();
 }
+
+
+void WorkerManager::initWorker()
+{
+    ifstream ifs;
+    ifs.open(FILENAME, ios::in);
+    int id;
+    string name;
+    int deptId;
+    int index = 0;     
+    while (ifs >> id && ifs >> name && ifs >> deptId)
+    {
+        Worker *worker = NULL;
+        // 根据不同部门id创建不同对象
+        if (deptId == 1)            // 普通职工
+            worker = new Employee(id, name, deptId);
+        else if (deptId == 2)       // 经理
+            worker = new Manager(id, name, deptId);
+        else                        // 老板
+            worker = new Boss(id, name, deptId);
+        
+        // 将对象存放在数组中
+        this->m_workerArray[index++] = worker;
+    }
+    ifs.close();
+
+}
+
 
 void WorkerManager::addWorker() // 添加职工信息
 {
@@ -123,6 +194,8 @@ void WorkerManager::addWorker() // 添加职工信息
             this->m_workerArray = newSpace;
             // 更新新的总职工人数
             this->m_workerNum = newSize;
+            // 更新文件不为空
+            this->m_isFileEmpty = false;
             // 保存职工数据信息到文件
             this->saveData();
             cout << endl
@@ -139,6 +212,22 @@ void WorkerManager::addWorker() // 添加职工信息
     system("pause"); // 按任意键继续
     system("cls");   // windows系统的清屏
 }
+
+
+int WorkerManager::get_workerNum()
+{
+    ifstream ifs;
+    ifs.open(FILENAME, ios::in);
+    int id;
+    string name;
+    int deptId;
+    int num = 0; // 记录人数
+    while (ifs >> id && ifs >> name && ifs >> deptId)
+        num++;
+    ifs.close();
+    return num;
+}
+
 
 WorkerManager::~WorkerManager()
 {
